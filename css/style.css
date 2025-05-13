@@ -1,0 +1,84 @@
+/* css/style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #081421; /* Very dark navy - slightly different from earlier, for better depth */
+    color: #e2e8f0; /* Light gray text (slate-200) */
+    font-family: 'Inter', sans-serif; /* Using a common modern sans-serif font, ensure to link it or use Tailwind's default */
+    scroll-behavior: smooth;
+}
+
+/* Animated Gradient for Hero Sections or Backgrounds */
+.animated-gradient-background {
+    background: linear-gradient(-45deg, #001f3f, #002f4b, #005f73, #0a9396); /* Deep ocean palette */
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Custom accent color usage (though Tailwind's arbitrary values are preferred for inline) */
+.accent-color { color: #002f4b; }
+.bg-accent-color { background-color: #002f4b; }
+.border-accent-color { border-color: #002f4b; }
+
+/* For nicer scrollbars (optional, browser support varies) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0a192f;
+}
+::-webkit-scrollbar-thumb {
+    background: #005f73; /* A color from the gradient */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0a9396; /* A lighter color from the gradient for hover */
+}
+
+/* Simple Scroll Animation Classes */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.scroll-animate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom card styling if needed beyond Tailwind */
+.custom-card {
+    background-color: rgba(17, 24, 39, 0.8); /* Tailwind's gray-900 with some opacity or a solid darker color */
+    backdrop-filter: blur(10px); /* For a glassy effect if background allows */
+    border: 1px solid rgba(55, 65, 81, 0.6); /* Tailwind's gray-700 with opacity */
+}
+
+/* Ensure Inter font is loaded if not using Tailwind's default sans stack that includes it */
+/* You can add @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap'); here if needed,
+   but Tailwind usually handles fonts well. For simplicity, relying on Tailwind's stack. */
+
+/* Header active link style */
+.nav-link-active {
+    color: #38bdf8; /* A lighter blue (sky-400) for active link to stand out */
+    font-weight: 500;
+}
+
+.nav-link-active::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #38bdf8; /* sky-400 */
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
