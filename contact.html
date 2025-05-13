@@ -1,123 +1,126 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
-<head>
+<html lang="en" dir="ltr"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me - Mahdi Ahmadi</title>
-    <meta name="description" content="Get in touch with Mahdi Ahmadi via Telegram or Email.">
+    <meta name="description" content="Get in touch with Mahdi Ahmadi for collaborations, inquiries, or just to say hello. Reach out via Telegram or Email.">
     <meta name="author" content="Mahdi Ahmadi">
     <link rel="canonical" href="https://mahdi-ahmadi.ir/contact.html">
-    <meta property="og:title" content="Contact Me - Mahdi Ahmadi">
-    <meta property="og:description" content="Get in touch with Mahdi Ahmadi via Telegram or Email.">
-    <meta property="og:image" content="https://mahdi-ahmadi.ir/assets/images/og-image-placeholder.png">
-    <meta property="og:url" content="https://mahdi-ahmadi.ir/contact.html">
+    <meta property="og:title" content="Contact Mahdi Ahmadi">
+    <meta property="og:description" content="Let's connect! Find ways to reach Mahdi Ahmadi for discussions, projects, or opportunities.">
+    <meta property="og:image" content="https://mahdi-ahmadi.ir/assets/images/og-image-placeholder.png"> <meta property="og:url" content="https://mahdi-ahmadi.ir/contact.html">
     <meta property="og:type" content="website">
-
+    <meta name="keywords" content="Mahdi Ahmadi, contact, email, Telegram, get in touch, collaboration, inquiry">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
 </head>
-<body class="bg-gray-900 text-slate-200">
+<body class="bg-slate-950 text-slate-300 font-light">
 
-    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md shadow-lg">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/70 backdrop-blur-xl shadow-2xl transition-all duration-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <a href="index.html" class="text-2xl font-bold text-white hover:text-[#00aaff] transition-colors">
-                    MAHDI AHMADI <span class="text-sm font-normal block opacity-70">LOGO HERE</span>
-                </a>
-                <nav class="hidden md:flex space-x-6 items-center">
-                    <a href="index.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                    <a href="about.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
-                    <a href="projects.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                    <a href="blog.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Blog</a>
-                    <a href="resume.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Resume</a>
-                    <a href="contact.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                <a href="index.html" class="text-3xl font-bold text-white hover:text-purple-400 transition-colors duration-300">MAHDI AHMADI</a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">Home</a>
+                    <a href="about.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">About</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">Projects</a>
+                    <a href="blog.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">Blog</a>
+                    <a href="resume.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">Resume</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">Contact</a>
                 </nav>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" type="button" class="text-slate-300 hover:text-white focus:outline-none focus:text-white" aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
+                <div class="flex items-center space-x-4">
+                    <button id="lang-switcher" type="button" class="lang-switcher-btn bg-purple-600 hover:bg-purple-700 text-white text-xs">FA</button>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" type="button" class="text-slate-300 hover:text-white focus:outline-none p-2 rounded-full" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <div class="space-y-1.5"><span class="block w-6 h-0.5 bg-current line line1"></span><span class="block w-6 h-0.5 bg-current line line2"></span><span class="block w-4 h-0.5 bg-current line line3 ml-auto"></span></div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="md:hidden hidden" id="mobile-menu" aria-hidden="true">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800/90 backdrop-blur-md rounded-b-lg">
-                <a href="index.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="about.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="projects.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Projects</a>
-                <a href="blog.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Blog</a>
-                <a href="resume.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Resume</a>
-                <a href="contact.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        <div class="md:hidden hidden transition-all duration-300 ease-in-out" id="mobile-menu" aria-hidden="true">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-900/95 backdrop-blur-md rounded-b-2xl shadow-xl">
+                <a href="index.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">Home</a>
+                <a href="about.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">About</a>
+                <a href="projects.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">Projects</a>
+                <a href="blog.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">Blog</a>
+                <a href="resume.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">Resume</a>
+                <a href="contact.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">Contact</a>
             </div>
         </div>
     </header>
 
-    <main class="pt-28 pb-16 min-h-screen flex items-center justify-center">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <section class="text-center mb-12 scroll-animate">
-                <h1 class="text-4xl font-bold mb-2 text-white">Get In Touch</h1>
-                <div class="w-20 h-1 bg-[#002f4b] mx-auto mb-10"></div>
-                <p class="text-slate-300 max-w-lg mx-auto mb-10">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of something exciting. Feel free to reach out.
+    <main class="pt-32 pb-20 min-h-screen flex items-center"> <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="text-center mb-16 scroll-animate">
+                <h1 class="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Let's Connect</h1>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto mb-12 rounded-full"></div>
+                <p class="text-slate-300 font-light text-lg max-w-xl mx-auto leading-relaxed">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to collaborate. Feel free to reach out through any of the channels below.
                     </p>
             </section>
 
-            <div class="max-w-md mx-auto bg-gray-800/80 custom-card p-8 sm:p-10 rounded-xl shadow-2xl scroll-animate">
-                <div class="space-y-8">
-                    <div class="flex items-start space-x-4 p-4 rounded-lg transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#00aaff] flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M9.78 18.65l.28-4.23a.69.69 0 00-.14-.59L4.1 9.01a.69.69 0 01.2-.87l15.28-6.05a.7.7 0 01.89.9l-4.28 13.5a.7.7 0 01-1.02.51l-4.08-2.15a.69.69 0 00-.68 0l-2.69 1.4a.7.7 0 01-1.02-.7z"></path>
-                        </svg>
+            <div class="max-w-lg mx-auto glass-card p-8 md:p-12 rounded-3xl shadow-2xl scroll-animate" style="animation-delay: 0.15s;">
+                <div class="space-y-10">
+                    <div class="flex flex-col sm:flex-row items-center text-center sm:text-left group">
+                        <div class="mb-4 sm:mb-0 sm:mr-6">
+                            <div class="bg-gradient-to-br from-blue-500 to-cyan-500 p-4 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <i class="ti ti-brand-telegram text-4xl text-white"></i>
+                            </div>
+                        </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-white">Telegram</h3>
-                            <p class="text-slate-400">
+                            <h3 class="text-2xl font-semibold text-white mb-1">Telegram</h3>
+                            <p class="text-slate-400 text-lg font-normal mb-3">
                                 @Ahmadi_py
                                 </p>
-                            <a href="https://t.me/Ahmadi_py" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 text-[#00aaff] hover:text-[#38bdf8] font-medium transition-colors group">
+                            <a href="https://t.me/Ahmadi_py" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-lg text-blue-400 hover:text-blue-300 font-medium transition-colors group/link">
                                 Send Message 
-                                <span class="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
+                                <i class="ti ti-arrow-right ml-2 transition-transform duration-300 group-hover/link:translate-x-1"></i>
                             </a>
                         </div>
                     </div>
 
-                    <div class="flex items-start space-x-4 p-4 rounded-lg transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00aaff" class="w-10 h-10 flex-shrink-0 mt-1">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                          </svg>
+                    <div class="border-t border-slate-700/50 my-6"></div> <div class="flex flex-col sm:flex-row items-center text-center sm:text-left group">
+                         <div class="mb-4 sm:mb-0 sm:mr-6">
+                            <div class="bg-gradient-to-br from-purple-500 to-pink-500 p-4 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <i class="ti ti-mail-filled text-4xl text-white"></i>
+                            </div>
+                        </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-white">Email</h3>
-                            <p class="text-slate-400 break-all">
+                            <h3 class="text-2xl font-semibold text-white mb-1">Email</h3>
+                            <p class="text-slate-400 text-lg font-normal mb-3 break-all">
                                 mahdi@example.com
                                 </p>
-                            <a href="mailto:mahdi@example.com" class="inline-block mt-2 text-[#00aaff] hover:text-[#38bdf8] font-medium transition-colors group">
+                            <a href="mailto:mahdi@example.com" class="inline-flex items-center text-lg text-purple-400 hover:text-purple-300 font-medium transition-colors group/link">
                                 Send Email
-                                <span class="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
+                                <i class="ti ti-arrow-right ml-2 transition-transform duration-300 group-hover/link:translate-x-1"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                 <p class="text-center text-xs text-slate-500 mt-8">
-                    I'll do my best to respond as soon as possible.
+                 <p class="text-center text-sm text-slate-500 mt-12 font-normal">
+                    I'll do my best to respond as soon as possible. Looking forward to hearing from you!
                     </p>
             </div>
         </div>
     </main>
 
-    <footer class="bg-gray-900 border-t border-gray-700/50 py-8 text-center">
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 text-center">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-slate-400 text-sm">
+            <p class="text-slate-400 text-sm font-light">
                 &copy; <span id="currentYear">2025</span> Mahdi Ahmadi. All rights reserved.
-                <br class="sm:hidden"> Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#00aaff] transition-colors">GitHub Pages</a>.
+                <br class="sm:hidden"> Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors">GitHub Pages</a>.
             </p>
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="https://t.me/Ahmadi_py" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-purple-400 transition-colors"><span class="sr-only">Telegram</span><i class="ti ti-brand-telegram text-2xl"></i></a>
+                <a href="mailto:mahdi@example.com" class="text-slate-400 hover:text-purple-400 transition-colors"><span class="sr-only">Email</span><i class="ti ti-mail text-2xl"></i></a>
+            </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
