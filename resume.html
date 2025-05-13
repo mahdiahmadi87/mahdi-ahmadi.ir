@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Mahdi Ahmadi</title>
+    <meta name="description" content="Mahdi Ahmadi's professional resume, showcasing skills, education, and experience.">
+    <meta name="author" content="Mahdi Ahmadi">
+    <link rel="canonical" href="https://mahdi-ahmadi.ir/resume.html">
+    <meta property="og:title" content="Resume - Mahdi Ahmadi">
+    <meta property="og:description" content="Mahdi Ahmadi's professional resume, showcasing skills, education, and experience.">
+    <meta property="og:image" content="https://mahdi-ahmadi.ir/assets/images/og-image-placeholder.png">
+    <meta property="og:url" content="https://mahdi-ahmadi.ir/resume.html">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Custom styles for timeline */
+        .timeline-item {
+            position: relative;
+            padding-left: 30px; /* Space for the line and dot */
+            margin-left: 15px; /* Align content correctly */
+            border-left: 2px solid #005f73; /* Timeline accent color */
+        }
+        .timeline-item:last-child {
+            border-left: 2px solid transparent; /* Hide line for last item if needed */
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -9px; /* Adjust to center on the line */
+            top: 0px; /* Adjust vertical alignment */
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #00aaff; /* Lighter accent for dot */
+            border: 2px solid #002f4b;
+        }
+        .timeline-item-content {
+            margin-bottom: 2rem; /* Space between timeline items */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-slate-200">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-2xl font-bold text-white hover:text-[#00aaff] transition-colors">
+                    MAHDI AHMADI <span class="text-sm font-normal block opacity-70">LOGO HERE</span>
+                </a>
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="about.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="blog.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+                    <a href="resume.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Resume</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" type="button" class="text-slate-300 hover:text-white focus:outline-none focus:text-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu" aria-hidden="true">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800/90 backdrop-blur-md rounded-b-lg">
+                <a href="index.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="projects.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="blog.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Blog</a>
+                <a href="resume.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Resume</a>
+                <a href="contact.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-28 pb-16 min-h-screen">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <section class="text-center mb-12 scroll-animate">
+                <h1 class="text-4xl font-bold mb-2 text-white">Resume</h1>
+                <div class="w-20 h-1 bg-[#002f4b] mx-auto mb-6"></div>
+                <p class="text-slate-300 max-w-2xl mx-auto">
+                    A summary of my professional background, skills, and education. Feel free to download a PDF version (link to be added).
+                    </p>
+                 </section>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="md:col-span-2 space-y-12">
+                    <section class="bg-gray-800/70 custom-card p-6 sm:p-8 rounded-xl shadow-2xl scroll-animate">
+                        <h2 class="text-2xl font-semibold text-white mb-6">Education</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-item-content">
+                                    <h3 class="text-xl font-medium text-white">
+                                        Master's Degree in AI</h3>
+                                    <p class="text-[#00aaff] text-sm mb-1">
+                                        University of Advanced Technology</p>
+                                    <p class="text-slate-400 text-xs mb-2">
+                                        2022 - 2024</p>
+                                    <p class="text-slate-300 text-sm">
+                                        Focused on machine learning, natural language processing, and computer vision. Thesis on [Placeholder Topic].
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-item-content">
+                                    <h3 class="text-xl font-medium text-white">
+                                        Bachelor's Degree in Computer Science</h3>
+                                    <p class="text-[#00aaff] text-sm mb-1">
+                                        Tech State University</p>
+                                    <p class="text-slate-400 text-xs mb-2">
+                                        2018 - 2022</p>
+                                    <p class="text-slate-300 text-sm">
+                                        Graduated with honors. Key coursework in data structures, algorithms, and software engineering.
+                                        </p>
+                                </div>
+                            </div>
+                            </div>
+                    </section>
+
+                    <section class="bg-gray-800/70 custom-card p-6 sm:p-8 rounded-xl shadow-2xl scroll-animate" style="animation-delay: 0.2s;">
+                        <h2 class="text-2xl font-semibold text-white mb-6">Experience</h2>
+                        <div class="timeline">
+                             <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-item-content">
+                                    <h3 class="text-xl font-medium text-white">
+                                        AI Research Intern</h3>
+                                    <p class="text-[#00aaff] text-sm mb-1">
+                                        Innovatech Solutions</p>
+                                    <p class="text-slate-400 text-xs mb-2">
+                                        Summer 2023</p>
+                                    <ul class="list-disc list-inside text-slate-300 text-sm space-y-1">
+                                        <li>Contributed to a project on [Placeholder Project Details].</li>
+                                        <li>Developed and tested [Placeholder Technology/Algorithm].</li>
+                                        <li>Collaborated with senior researchers.</li>
+                                        </ul>
+                                </div>
+                            </div>
+                            <p class="text-slate-400 text-sm ml-[-15px] mt-4">
+                                Currently focused on personal projects and expanding my skillset. (Or: Add more detailed work experience here.)
+                                </p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="md:col-span-1 space-y-8">
+                    <section class="bg-gray-800/70 custom-card p-6 sm:p-8 rounded-xl shadow-2xl scroll-animate" style="animation-delay: 0.4s;">
+                        <h2 class="text-2xl font-semibold text-white mb-6">Skills</h2>
+                        <ul class="space-y-2 text-slate-300">
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#00aaff]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Programming (Python, JavaScript)</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#00aaff]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Artificial Intelligence & Machine Learning</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#00aaff]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Linux System Administration</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#00aaff]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Web Development (HTML, CSS, Django)</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#00aaff]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Photography & Photo Editing</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-[#00aaff]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Problem Solving & Analytical Thinking</li>
+                            </ul>
+                    </section>
+
+                    <section class="bg-gray-800/70 custom-card p-6 sm:p-8 rounded-xl shadow-2xl scroll-animate" style="animation-delay: 0.6s;">
+                        <h2 class="text-2xl font-semibold text-white mb-6">Technologies</h2>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-[#002f4b] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">Python</span>
+                            <span class="bg-[#002f4b] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">Linux</span>
+                            <span class="bg-[#002f4b] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">Django</span>
+                            <span class="bg-[#005f73] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">JavaScript</span>
+                            <span class="bg-[#005f73] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">HTML5</span>
+                            <span class="bg-[#005f73] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">CSS3</span>
+                            <span class="bg-[#005f73] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">Tailwind CSS</span>
+                            <span class="bg-[#0a9396] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">Git</span>
+                            <span class="bg-[#0a9396] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">Docker</span>
+                            <span class="bg-[#0a9396] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">SQL</span>
+                            <span class="bg-[#0a9396] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">TensorFlow</span>
+                            <span class="bg-[#0a9396] text-white px-3 py-1.5 text-sm font-medium rounded-full shadow-md">PyTorch</span>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-700/50 py-8 text-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-slate-400 text-sm">
+                &copy; <span id="currentYear">2025</span> Mahdi Ahmadi. All rights reserved.
+                <br class="sm:hidden"> Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#00aaff] transition-colors">GitHub Pages</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+              </html>
+                                                                                                                                                                                                                                                                                                                         
