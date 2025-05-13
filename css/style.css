@@ -1,18 +1,35 @@
 /* css/style.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind's base, components, and utilities are sourced from the CDN.
+   This file is for custom styles that complement or extend Tailwind. */
 
 body {
-    background-color: #081421; /* Very dark navy - slightly different from earlier, for better depth */
-    color: #e2e8f0; /* Light gray text (slate-200) */
-    font-family: 'Inter', sans-serif; /* Using a common modern sans-serif font, ensure to link it or use Tailwind's default */
+    /* Base background for the entire page, can be a very dark color or a subtle gradient */
+    background-color: #030712; /* Tailwind slate-950 */
+    /* background-image: linear-gradient(to bottom right, #030712, #1e1b4b); Violet-950 for a subtle purple tint */
+    color: #cbd5e1; /* Tailwind slate-300, lighter for better contrast */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     scroll-behavior: smooth;
+    font-weight: 300; /* Lighter body font */
 }
 
-/* Animated Gradient for Hero Sections or Backgrounds */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Bolder headings */
+    letter-spacing: -0.025em; /* Slightly tighter letter spacing for headings */
+}
+
+/* Accent Colors (examples, can be defined as CSS variables if preferred) */
+:root {
+    --color-deep-ocean-blue: #002f4b;
+    --color-elegant-purple: #581C87; /* purple-800 */
+    --color-accent-glow: rgba(168, 85, 247, 0.6); /* purple-500 with opacity */
+}
+
+/* Main Background for Hero/Sections */
+.deep-ocean-gradient-bg {
+    background-image: linear-gradient(135deg, var(--color-deep-ocean-blue) 0%, var(--color-elegant-purple) 100%);
+}
 .animated-gradient-background {
-    background: linear-gradient(-45deg, #001f3f, #002f4b, #005f73, #0a9396); /* Deep ocean palette */
+    background: linear-gradient(-45deg, #001f3f, #002f4b, #581C87, #7e22ce); /* ocean blue to deeper purple */
     background-size: 400% 400%;
     animation: gradientBG 20s ease infinite;
 }
@@ -23,62 +40,147 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Custom accent color usage (though Tailwind's arbitrary values are preferred for inline) */
-.accent-color { color: #002f4b; }
-.bg-accent-color { background-color: #002f4b; }
-.border-accent-color { border-color: #002f4b; }
 
-/* For nicer scrollbars (optional, browser support varies) */
+/* Glassmorphism Card Style */
+.glass-card {
+    /* A bit more color saturation for the glass effect */
+    background: linear-gradient(135deg, rgba(0, 47, 75, 0.15), rgba(88, 28, 135, 0.15)); /* Blue to Purple, semi-transparent */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Safari */
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    /* All corners fully rounded - Tailwind's rounded-2xl or rounded-3xl will be used */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Glowing Button Effect (applied via Tailwind hover utilities primarily) */
+.btn-glow:hover {
+    box-shadow: 0 0 15px 3px var(--color-accent-glow), 0 0 25px 8px rgba(0, 47, 75, 0.5);
+}
+
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #0a192f;
+    background: #0f172a; /* slate-900 */
 }
 ::-webkit-scrollbar-thumb {
-    background: #005f73; /* A color from the gradient */
-    border-radius: 4px;
+    background: var(--color-deep-ocean-blue);
+    border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #0a9396; /* A lighter color from the gradient for hover */
+    background: #7e22ce; /* purple-600 */
 }
 
-/* Simple Scroll Animation Classes */
+/* Scroll Animation Classes */
 .scroll-animate {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: translateY(40px); /* Start slightly lower */
+    transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .scroll-animate.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Custom card styling if needed beyond Tailwind */
-.custom-card {
-    background-color: rgba(17, 24, 39, 0.8); /* Tailwind's gray-900 with some opacity or a solid darker color */
-    backdrop-filter: blur(10px); /* For a glassy effect if background allows */
-    border: 1px solid rgba(55, 65, 81, 0.6); /* Tailwind's gray-700 with opacity */
-}
-
-/* Ensure Inter font is loaded if not using Tailwind's default sans stack that includes it */
-/* You can add @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap'); here if needed,
-   but Tailwind usually handles fonts well. For simplicity, relying on Tailwind's stack. */
-
-/* Header active link style */
+/* Header active link style - more prominent */
 .nav-link-active {
-    color: #38bdf8; /* A lighter blue (sky-400) for active link to stand out */
-    font-weight: 500;
+    color: #a855f7; /* purple-500 */
+    font-weight: 500; /* medium */
+    position: relative;
 }
-
 .nav-link-active::after {
     content: '';
     display: block;
-    width: 60%;
-    height: 2px;
-    background-color: #38bdf8; /* sky-400 */
-    margin-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 8px; /* Small dot instead of underline */
+    height: 8px;
+    background-color: #a855f7; /* purple-500 */
+    border-radius: 9999px; /* rounded-full */
+    position: absolute;
+    bottom: -10px; /* Position below the link */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Timeline Styles (from previous, ensure rounded corners) */
+.timeline-item {
+    position: relative;
+    padding-left: 30px; /* Space for the line and dot */
+    margin-left: 15px; /* Align content correctly */
+    border-left: 3px solid var(--color-deep-ocean-blue); /* Thicker line */
+}
+.timeline-item:last-child {
+    border-left-color: transparent;
+}
+.timeline-dot {
+    position: absolute;
+    left: -10px; /* Adjust to center on the line */
+    top: 0px; /* Adjust vertical alignment */
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px; /* rounded-full */
+    background-color: #a855f7; /* purple-500 */
+    border: 3px solid #030712; /* Match body background for a "punch-out" effect */
+}
+
+/* RTL Specific Base Styling (more specific rules can be added as needed) */
+body.rtl-active {
+    direction: rtl;
+    text-align: right; /* Basic text alignment */
+}
+
+/* Example: Reversing flex order for RTL if not handled by Tailwind's rtl: variant (which needs config) */
+.rtl-active .flex-logical-reverse {
+    flex-direction: row-reverse;
+}
+.rtl-active nav, .rtl-active .space-x-6 { /* Adjust spacing for RTL in nav if needed */
+    direction: ltr; /* Keep nav items LTR for spacing, individual elements can be RTL */
+}
+.rtl-active nav a {
+    direction: rtl;
+}
+.rtl-active .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1; /* Tailwind class to reverse space-x */
+     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+/* Animated Hamburger Icon */
+#mobile-menu-button .line {
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+}
+#mobile-menu-button.open .line1 {
+    transform: translateY(7px) rotate(45deg);
+}
+#mobile-menu-button.open .line2 {
+    opacity: 0;
+}
+#mobile-menu-button.open .line3 {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Language Switcher Button style */
+.lang-switcher-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px; /* rounded-full */
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.lang-switcher-btn:hover {
+    box-shadow: 0 0 10px var(--color-accent-glow);
+}
+
+/* Hero section button glow on hover */
+.hero-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+.hero-btn-primary:hover {
+     box-shadow: 0 0 20px 5px rgba(0, 47, 75, 0.7), 0 0 30px 10px rgba(88, 28, 135, 0.5);
+}
+.hero-btn-secondary:hover {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
 }
