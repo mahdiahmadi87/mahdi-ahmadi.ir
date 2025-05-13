@@ -1,167 +1,151 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Mahdi Ahmadi</title>
-    <meta name="description" content="Discover projects by Mahdi Ahmadi, including photography and coding work.">
+    <meta name="description" content="Explore a collection of Mahdi Ahmadi's projects in photography, coding, AI, and more.">
     <meta name="author" content="Mahdi Ahmadi">
     <link rel="canonical" href="https://mahdi-ahmadi.ir/projects.html">
-    <meta property="og:title" content="Projects - Mahdi Ahmadi">
-    <meta property="og:description" content="Discover projects by Mahdi Ahmadi, including photography and coding work.">
+    <meta property="og:title" content="Projects Showcase - Mahdi Ahmadi">
+    <meta property="og:description" content="Discover creative and technical projects by Mahdi Ahmadi.">
     <meta property="og:image" content="https://mahdi-ahmadi.ir/assets/images/og-image-placeholder.png">
     <meta property="og:url" content="https://mahdi-ahmadi.ir/projects.html">
     <meta property="og:type" content="website">
+    <meta name="keywords" content="Mahdi Ahmadi, projects, portfolio, photography projects, coding projects, AI projects">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
 </head>
-<body class="bg-gray-900 text-slate-200">
+<body class="bg-slate-950 text-slate-300 font-light">
 
-    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md shadow-lg">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/70 backdrop-blur-xl shadow-2xl transition-all duration-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <a href="index.html" class="text-2xl font-bold text-white hover:text-[#00aaff] transition-colors">
-                    MAHDI AHMADI <span class="text-sm font-normal block opacity-70">LOGO HERE</span>
-                </a>
-                <nav class="hidden md:flex space-x-6 items-center">
-                    <a href="index.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                    <a href="about.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
-                    <a href="projects.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                    <a href="blog.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Blog</a>
-                    <a href="resume.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Resume</a>
-                    <a href="contact.html" class="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                <a href="index.html" class="text-3xl font-bold text-white hover:text-purple-400 transition-colors duration-300">MAHDI AHMADI</a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">Home</a>
+                    <a href="about.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">About</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">Projects</a>
+                    <a href="blog.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">Blog</a>
+                    <a href="resume.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">Resume</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-purple-400 transition-colors duration-300 px-3 py-2 rounded-full text-sm font-medium">Contact</a>
                 </nav>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" type="button" class="text-slate-300 hover:text-white focus:outline-none focus:text-white" aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
+                <div class="flex items-center space-x-4">
+                    <button id="lang-switcher" type="button" class="lang-switcher-btn bg-purple-600 hover:bg-purple-700 text-white text-xs">FA</button>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" type="button" class="text-slate-300 hover:text-white focus:outline-none p-2 rounded-full" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <div class="space-y-1.5"><span class="block w-6 h-0.5 bg-current line line1"></span><span class="block w-6 h-0.5 bg-current line line2"></span><span class="block w-4 h-0.5 bg-current line line3 ml-auto"></span></div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="md:hidden hidden" id="mobile-menu" aria-hidden="true">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800/90 backdrop-blur-md rounded-b-lg">
-                <a href="index.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="about.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="projects.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Projects</a>
-                <a href="blog.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Blog</a>
-                <a href="resume.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Resume</a>
-                <a href="contact.html" class="block text-slate-300 hover:bg-[#002f4b] hover:text-white px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        <div class="md:hidden hidden transition-all duration-300 ease-in-out" id="mobile-menu" aria-hidden="true">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-900/95 backdrop-blur-md rounded-b-2xl shadow-xl">
+                <a href="index.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">Home</a>
+                <a href="about.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">About</a>
+                <a href="projects.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">Projects</a>
+                <a href="blog.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">Blog</a>
+                <a href="resume.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">Resume</a>
+                <a href="contact.html" class="block text-slate-300 hover:bg-purple-700 hover:text-white px-3 py-3 rounded-xl text-base font-medium transition-colors duration-200">Contact</a>
             </div>
         </div>
     </header>
 
-    <main class="pt-28 pb-16 min-h-screen">
+    <main class="pt-32 pb-20 min-h-screen">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <section class="text-center mb-16 scroll-animate">
-                <h1 class="text-4xl font-bold mb-2 text-white">My Projects</h1>
-                <div class="w-20 h-1 bg-[#002f4b] mx-auto mb-10"></div>
-                <p class="text-slate-300 max-w-2xl mx-auto">
-                    Here's a selection of projects I've worked on, spanning photography, coding, and more. Explore my work and see what I'm passionate about.
+            <section class="text-center mb-20 scroll-animate">
+                <h1 class="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">My Projects</h1>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto mb-12 rounded-full"></div>
+                <p class="text-slate-300 font-light text-lg max-w-2xl mx-auto leading-relaxed">
+                    Here's a selection of projects I've passionately worked on, showcasing my skills in photography, coding, and AI. Dive in and explore!
                     </p>
             </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                 
-                <div class="bg-gray-800 custom-card rounded-xl shadow-2xl overflow-hidden flex flex-col group scroll-animate">
-                    <img src="assets/images/project-placeholder-1.jpg" alt="Project Title 1 Placeholder" class="w-full h-48 object-cover group-hover:opacity-80 transition-opacity">
+                <div class="glass-card rounded-3xl overflow-hidden flex flex-col group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-purple-500/30 hover:shadow-2xl scroll-animate">
+                    <div class="relative">
+                        <img src="assets/images/project-placeholder-1.jpg" alt="Project Title 1 Placeholder" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-0 right-0 bg-gradient-to-bl from-purple-600 to-blue-600 text-white px-3 py-1.5 text-xs font-semibold rounded-bl-2xl">
+                            Photography</div>
+                    </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-semibold text-white mb-2">
+                        <h3 class="text-2xl font-semibold text-white mb-2">
                             Project Title 1</h3>
-                        <div class="flex justify-between items-center text-sm text-slate-400 mb-3">
-                            <span>
-                                Oct 2024</span>
-                            <span class="px-2 py-1 bg-[#002f4b] text-white text-xs font-semibold rounded-full">
-                                Photography</span>
-                        </div>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
-                            A short description of this amazing photography project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        <p class="text-slate-400 text-xs mb-4">
+                            October 2024</p>
+                        <p class="text-slate-300 text-sm font-light leading-relaxed mb-6 flex-grow">
+                            A short description of this amazing photography project. Exploring light and shadow in urban landscapes.
                             </p>
-                        <a href="#" class="mt-auto inline-block text-center bg-[#002f4b] hover:bg-[#00406b] text-white font-medium py-2 px-4 rounded-lg transition-colors">
-                            View Gallery</a>
+                        <a href="#" class="mt-auto self-start inline-flex items-center bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-medium py-2.5 px-6 rounded-full transition-all duration-300 btn-glow group-hover:shadow-lg group-hover:shadow-purple-500/50">
+                            View Gallery <i class="ti ti-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i></a>
                     </div>
                 </div>
 
-                <div class="bg-gray-800 custom-card rounded-xl shadow-2xl overflow-hidden flex flex-col group scroll-animate" style="animation-delay: 0.2s;">
-                    <img src="assets/images/project-placeholder-2.jpg" alt="Project Title 2 Placeholder" class="w-full h-48 object-cover group-hover:opacity-80 transition-opacity">
+                <div class="glass-card rounded-3xl overflow-hidden flex flex-col group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-blue-500/30 hover:shadow-2xl scroll-animate" style="animation-delay: 0.15s;">
+                    <div class="relative">
+                        <img src="assets/images/project-placeholder-2.jpg" alt="Project Title 2 Placeholder" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-0 right-0 bg-gradient-to-bl from-blue-600 to-teal-600 text-white px-3 py-1.5 text-xs font-semibold rounded-bl-2xl">
+                            Coding</div>
+                    </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-semibold text-white mb-2">
+                        <h3 class="text-2xl font-semibold text-white mb-2">
                             Awesome Code Project</h3>
-                        <div class="flex justify-between items-center text-sm text-slate-400 mb-3">
-                            <span>
-                                Nov 2024</span>
-                            <span class="px-2 py-1 bg-[#005f73] text-white text-xs font-semibold rounded-full">
-                                Coding</span>
-                        </div>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
+                         <p class="text-slate-400 text-xs mb-4">
+                            November 2024</p>
+                        <p class="text-slate-300 text-sm font-light leading-relaxed mb-6 flex-grow">
                             This project involves Python and Django. It solves a very interesting problem using modern web technologies.
                             </p>
-                        <a href="#" class="mt-auto inline-block text-center bg-[#002f4b] hover:bg-[#00406b] text-white font-medium py-2 px-4 rounded-lg transition-colors">
-                            View on GitHub</a>
+                        <a href="#" class="mt-auto self-start inline-flex items-center bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white font-medium py-2.5 px-6 rounded-full transition-all duration-300 btn-glow group-hover:shadow-lg group-hover:shadow-blue-500/50">
+                            View on GitHub <i class="ti ti-brand-github ml-2"></i></a>
                     </div>
                 </div>
-
-                <div class="bg-gray-800 custom-card rounded-xl shadow-2xl overflow-hidden flex flex-col group scroll-animate" style="animation-delay: 0.4s;">
-                    <div class="w-full h-48 bg-gray-700 flex items-center justify-center text-slate-400 group-hover:opacity-80 transition-opacity">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00aaff" class="w-16 h-16">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 1.052A59.911 59.911 0 0012 3.493a59.911 59.911 0 007.007 6.002" />
-                        </svg>
+                
+                <div class="glass-card rounded-3xl overflow-hidden flex flex-col group transform hover:-translate-y-2 transition-all duration-300 hover:shadow-purple-500/30 hover:shadow-2xl scroll-animate" style="animation-delay: 0.3s;">
+                    <div class="relative w-full h-56 bg-gradient-to-br from-slate-800 via-purple-900 to-slate-800 flex items-center justify-center">
+                         <i class="ti ti-brain text-7xl text-purple-400 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"></i>
+                        <div class="absolute top-0 right-0 bg-gradient-to-bl from-purple-700 to-pink-600 text-white px-3 py-1.5 text-xs font-semibold rounded-bl-2xl">
+                            AI/Research</div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-semibold text-white mb-2">
+                        <h3 class="text-2xl font-semibold text-white mb-2">
                             AI Research Paper</h3>
-                        <div class="flex justify-between items-center text-sm text-slate-400 mb-3">
-                            <span>
-                                Jan 2025</span>
-                            <span class="px-2 py-1 bg-[#0a9396] text-white text-xs font-semibold rounded-full">
-                                AI/Research</span>
-                        </div>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
+                        <p class="text-slate-400 text-xs mb-4">
+                            January 2025</p>
+                        <p class="text-slate-300 text-sm font-light leading-relaxed mb-6 flex-grow">
                             Exploring novel approaches in natural language processing. This is a placeholder description for the project.
                             </p>
-                        <a href="#" class="mt-auto inline-block text-center bg-[#002f4b] hover:bg-[#00406b] text-white font-medium py-2 px-4 rounded-lg transition-colors">
-                            Read Paper</a>
+                        <a href="#" class="mt-auto self-start inline-flex items-center bg-gradient-to-r from-purple-700 to-pink-600 hover:from-purple-800 hover:to-pink-700 text-white font-medium py-2.5 px-6 rounded-full transition-all duration-300 btn-glow group-hover:shadow-lg group-hover:shadow-pink-500/50">
+                            Read Paper <i class="ti ti-file-text ml-2"></i></a>
                     </div>
                 </div>
 
-                <div class="bg-gray-800 custom-card rounded-xl shadow-2xl overflow-hidden flex flex-col group scroll-animate" style="animation-delay: 0.1s;">
-                    <div class="w-full h-48 bg-gray-700 flex items-center justify-center text-slate-400 group-hover:opacity-80 transition-opacity">Project Image Placeholder</div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-semibold text-white mb-2">Project Title 4</h3>
-                        <div class="flex justify-between items-center text-sm text-slate-400 mb-3">
-                            <span>Feb 2025</span>
-                            <span class="px-2 py-1 bg-[#002f4b] text-white text-xs font-semibold rounded-full">Linux Setup</span>
-                        </div>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">Custom Arch Linux configuration guide and dotfiles.</p>
-                        <a href="#" class="mt-auto inline-block text-center bg-[#002f4b] hover:bg-[#00406b] text-white font-medium py-2 px-4 rounded-lg transition-colors">View Details</a>
-                    </div>
                 </div>
-            </div>
             
-            <p class="text-center text-slate-400 mt-12">
-                For more projects, please visit my <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="text-[#00aaff] hover:underline">GitHub profile</a>. (Remember to replace YOUR_GITHUB_USERNAME)
+            <p class="text-center text-slate-400 font-light text-lg mt-20">
+                For more projects and code, visit my <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 hover:underline underline-offset-4 transition-all">GitHub profile <i class="ti ti-external-link text-sm align-middle"></i></a>.
                 </p>
-
         </div>
     </main>
 
-    <footer class="bg-gray-900 border-t border-gray-700/50 py-8 text-center">
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 text-center">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-slate-400 text-sm">
+            <p class="text-slate-400 text-sm font-light">
                 &copy; <span id="currentYear">2025</span> Mahdi Ahmadi. All rights reserved.
-                <br class="sm:hidden"> Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer" class="hover:text-[#00aaff] transition-colors">GitHub Pages</a>.
+                <br class="sm:hidden"> Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors">GitHub Pages</a>.
             </p>
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="https://t.me/Ahmadi_py" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-purple-400 transition-colors"><span class="sr-only">Telegram</span><i class="ti ti-brand-telegram text-2xl"></i></a>
+                <a href="mailto:mahdi@example.com" class="text-slate-400 hover:text-purple-400 transition-colors"><span class="sr-only">Email</span><i class="ti ti-mail text-2xl"></i></a>
+            </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
 </body>
-                          </html>
-                                            
+</html>
